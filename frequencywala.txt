@@ -1,0 +1,26 @@
+void showfrequency()
+{ ifstream file1;                                  //opening file
+        file1.open("productst.dat",ios::in);
+        if(!file1){
+        cout<<"Error in opening file.";
+        }
+        else{
+                product pobj;
+            cout<<"File opened and the contents in the file are:\n";
+            file1>>product_id>>product_number>>product_type>>product_description>>product_price>>product_qty; //reading from file;
+            while(!file1.eof())
+            {c[j]=product_qty;
+            j++;
+            file1>>product_id>>product_number>>product_type>>product_description>>product_price>>product_qty; //reading from file;
+            
+            
+            }
+            for(int i=0;i<count1;i++)
+            {
+            d[i]=b[i]-c[i];
+            }
+            quickSortIterative(d,0,count1);
+            for(i=0;i<count1;i++)
+            {cout<<d[i]<<endl;
+            }
+}
